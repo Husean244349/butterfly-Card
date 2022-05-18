@@ -1,0 +1,81 @@
+body{
+    background-color: #4547;
+    justify-content: center;
+    align-items: center;
+    display:flex ;
+    font-family: Arial, Helvetica, sans-serif ;
+    min-height: 90vh;
+}
+.card{
+        position: relative;
+        width: 200px;
+        height: 300px;
+        border-radius: 0px 10px 10px 0px;
+        background: #f4f4f4;
+        perspective:150em;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        /* box-shadow: 30px 40px 40px rgba(0,0,0,0.2); */
+        margin:auto;
+}
+        .cover{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 200px;
+                height: 100px;
+                background: dodgerblue;
+                transform-style:preserve-3d;
+                transform-origin: left;
+                font-size: 30px;
+                font-weight: bold;
+                transform-origin:left ;
+                transition: transform 1s;
+                border-radius: 0 10px 10px 0;
+                height: 300px;
+                /* margin: 90px; */
+        }
+        .cover:hover.cover{
+            transform: rotatey(-160deg);
+
+        }
+        .coverfront,.coverback{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .coverfront{
+            background: #f4f4f4;
+            color: #333;
+            /* color: yellow; */
+            /* border-radius: 0px 10px 10px 0px; */
+            text-align: center;
+            margin-top: 70px;
+            margin-left: 30px;
+            padding: 20px;
+        }
+        .coverback{
+            /* background: #ddd; */
+            border-radius: 10px 0px 0px 10px;
+            transform: rotateY(180deg);
+        }
+          
+        .sh-ime{
+            width: 100px;
+            height: 100px;
+            
+        }
+        .sh-btn{
+            border: 0;
+            background: dodgerblue;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: #eee;
+            margin: 10px;
+        }
+
+    
